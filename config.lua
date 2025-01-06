@@ -1,5 +1,7 @@
 Config = {}
 
+Config.Stungun = "WEAPON_STUNGUN"
+
 Config.Cartridges = 2 -- Shots players have before they need to reload.
 
 Config.ReloadTime = 5 -- In Seconds

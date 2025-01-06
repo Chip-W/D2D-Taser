@@ -1,3 +1,5 @@
+-- Original resource by D2D - https://github.com/DareToDoyle/D2D-Taser
+
 Config = {}
 
 Config.Stungun = "WEAPON_STUNGUN"

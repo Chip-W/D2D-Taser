@@ -4,7 +4,7 @@ lua54 'yes'
 
 description 'Taser Cartridges'
 version '1.0.0'
-author 'First Response RP'
+author 'First Response RP' -- Original resource by D2D - https://github.com/DareToDoyle/D2D-Taser
 
 shared_scripts {
     '@ox_lib/init.lua',

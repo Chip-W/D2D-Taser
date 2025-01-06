@@ -17,4 +17,7 @@ taser_ammo = { ammoType = 'AMMO_STUNGUN', amount = 2 },
 
 5) Start your server and enjoy!
 
+-----------
+REQUIREMENTS
+-----------
 This resource requires ox_lib

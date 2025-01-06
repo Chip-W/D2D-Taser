@@ -1,10 +1,18 @@
-# D2D-Taser
-Taser System for FiveM
+# First Response RP Taser
+Taser System for FiveM / QBCore
 
-1) Upload SQL into your database and put the icon in your inventory resource.
+This is a QBCore conversion of D2D Taser - https://github.com/DareToDoyle/D2D-Taser
 
-2) Put "Start D2D-Taser" in your server.cfg
+1) Copy this item to your qb-core/shared/items.lua
+taser_ammo = { name = 'taser_ammo', label = 'Taser Cartridge', weight = 200, type = 'item', image = 'taser_ammo.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Taser Cartridge' },
 
-3) Start your server and enjoy!
+2) Copy this to your qb-weapons/config.lua (Config.AmmoTypes section)
+taser_ammo = { ammoType = 'AMMO_STUNGUN', amount = 2 },
 
-You are not permitted to redistribute or sell my script to other people.
+3) Add the included taser_ammo.png to your inventory images folder
+
+4) Put "ensure frrp_taser" in your server.cfg
+
+5) Start your server and enjoy!
+
+This resource requires ox_lib

@@ -1,3 +1,5 @@
+-- Original resource by D2D - https://github.com/DareToDoyle/D2D-Taser
+
 local QBCore = exports['qb-core']:GetCoreObject()
 
 QBCore.Functions.CreateUseableItem('taser_ammo', function(source)

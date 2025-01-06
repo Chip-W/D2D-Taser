@@ -1,20 +1,16 @@
-ESX = nil
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
-
-ESX.RegisterUsableItem('tasercart', function(source)
+QBCore.Functions.CreateUseableItem('taser_ammo', function(source)
 	local source = source
-	local xPlayer  = ESX.GetPlayerFromId(source)
-
-    TriggerClientEvent("d2d-taser", source)
+	local xPlayer  = QBCore.Functions.GetPlayer(source)
 	
+    TriggerClientEvent("frrp-taser", source)
 end)
 
-RegisterNetEvent("d2d-cartcheck")
-AddEventHandler("d2d-cartcheck", function()
-local source = source
-local xPlayer  = ESX.GetPlayerFromId(source)
+RegisterNetEvent("frrp-cartcheck")
+AddEventHandler("frrp-cartcheck", function()
+	local source = source
+	local xPlayer  = QBCore.Functions.GetPlayer(source)
 
-xPlayer.removeInventoryItem('tasercart', 1)
-
+	xPlayer.Functions.RemoveItem('taser_ammo', 1)
 end)
